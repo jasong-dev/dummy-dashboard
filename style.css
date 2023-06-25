@@ -74,12 +74,23 @@ ul {
    justify-content: space-between;
 }
 
+.header {
+   background: white;
+   display: grid;
+   grid-template-rows: 1fr 2fr;
+   grid-template-columns: 7fr 1fr 1fr 1fr;
+   max-height: 13vh;
+}
+
+.header :nth-child(n + 5) {
+   grid-row-start: 2;
+}
+
 .content {
-   padding-top: 2rem;
-   padding-left: 2.5rem;
    background-color: rgb(224, 250, 250);
    display: grid;
    grid-template-rows: auto auto;
+   padding-left: 2.5rem;
 }
 
 .content > .projects {
